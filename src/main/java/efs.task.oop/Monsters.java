@@ -15,8 +15,10 @@ public class Monsters {
                 setHealth(0);
                 //healthStatus = false;
             }
-            monstersHealth -= damage;
-            setHealth(getHealth() - damage);
+            else {
+                monstersHealth -= damage;
+                setHealth(getHealth() - damage);
+            }
         }
     };
 
@@ -33,8 +35,10 @@ public class Monsters {
                 setHealth(0);
                 //healthStatus = false;
             }
-            monstersHealth -= (damage + 5);
-            setHealth(getHealth() - (damage + 5));
+            else {
+                monstersHealth -= (damage + 5);
+                setHealth(getHealth() - (damage + 5));
+            }
         }
     };
 

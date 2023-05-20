@@ -41,8 +41,8 @@ public class Main {
         Monster fightingMonster;
         int currentlyFightingVillager = 0;
 
-        while(monsters.getMonstersHealth() > 0 && currentlyFightingVillager < villagers.size()) { // mozliwy bug, gdy bijemy jednego potwora, suma damage'u moze nie rowno sie rozlozyc
-            //if(!villagers.get(currentlyFightingVillager).isAlive()) {                               // skutek - jeden z potworow nadal zywy, choc getMonsterHealth wskazuje inaczej
+        while(monsters.getMonstersHealth() > 0 && currentlyFightingVillager < villagers.size()) {
+            //if(!villagers.get(currentlyFightingVillager).isAlive()) {
             if(!(villagers.get(currentlyFightingVillager).getHealth() > 0)) {
                 currentlyFightingVillager++;
                 continue;
